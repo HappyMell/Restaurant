@@ -1,0 +1,95 @@
+.menu {
+  //padding: 35px 0px;
+  // margin-bottom: 80px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    padding: 35px 0px;
+  }
+
+  &__main {
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+
+  &__container {
+    padding: 50px 20px 35px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__intro {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__start {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    li {
+      padding: 16px 48px 16px 10px;
+      margin-bottom: -1px;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        color: #959595;
+
+        &:focus {
+          font-weight: 700;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 10px 20px;
+
+    @include respond-to(sm) {
+      flex: 0 0 50%;
+    }
+
+    .food-title {
+      font-weight: 700;
+      color: $header-color;
+    }
+
+    .food-price {
+      font-family: 'Roboto Mono';
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .small {
+      font-size: 12.5px;
+    }
+  }
+  &__title {
+    flex: 0 0 79%;
+  }
+
+  .main-menu {
+    @include respond-to(sm) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.ui-tabs-active {
+  border-bottom: 1px solid $brand-color;
+}

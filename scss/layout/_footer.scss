@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  background: $header-color;
+  padding: 110px 0;
+
+  .page-footer {
+    &__container {
+      @include respond-to(xsm) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      @include respond-to(xsm) {
+        flex: 0 0 100%;
+      }
+    }
+
+    &__img {
+      height: 65px;
+    }
+
+    &__footer {
+      display: flex;
+      margin-bottom: 30px;
+
+      @include respond-to(xsm) {
+        flex: 0 0 66%;
+      }
+    }
+
+    &__links {
+      padding-right: 10px;
+      flex: 0 0 50%;
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-family: 'Roboto Mono';
+        font-size: 12.5px;
+        color: #fff;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+
+    &__social {
+      padding-right: 10px;
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-family: 'Roboto Mono';
+        font-size: 12.5px;
+        color: #fff;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+
+    &__contact {
+      flex: 0 0 30%;
+    }
+
+    &__contact-details {
+      margin-bottom: 20px;
+
+      .footer-details {
+        font-family: 'Roboto Mono';
+        font-size: 12.5px;
+      }
+    }
+  }
+}

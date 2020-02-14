@@ -1,0 +1,38 @@
+.flickity-button {
+  background: $header-color;
+}
+
+.flickity-button-icon {
+  fill: $brand-color;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.flickity-page-dots {
+  bottom: 2px;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 465px; /* height of carousel */
+  margin-right: 10px;
+}
+
+.carousel-img {
+  display: block;
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel {
+  width: 100%;
+}

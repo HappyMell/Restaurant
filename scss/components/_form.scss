@@ -1,0 +1,54 @@
+.form {
+  @include respond-to(sm) {
+    display: flex;
+  }
+
+  form {
+    background: #f8f8f8;
+    padding: 35px;
+  }
+
+  label {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 13px;
+    color: #20272f;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  input {
+    padding: 8px 12px 8px 60px;
+    margin-bottom: 30px;
+    height: 54px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    background-position: 0% 50%;
+    background-size: 52px;
+    background-repeat: no-repeat;
+    -webkit-transition: border 200ms ease;
+    transition: border 200ms ease;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+  }
+
+  textarea {
+    padding: 16px 12px 8px 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    height: 54px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    border-radius: 5px;
+    height: 120px;
+    color: #959595;
+  }
+
+  &__row {
+    flex: 0 0 50%;
+    width: 100%;
+  }
+}

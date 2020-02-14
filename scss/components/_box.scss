@@ -1,0 +1,49 @@
+.service-box {
+  padding: 33px;
+  margin-bottom: 20px;
+  background: rgba(32, 39, 47, 0.97);
+
+  @include respond-to(xsm) {
+    flex: 0 0 48%;
+  }
+
+  @include respond-to(sm) {
+    flex: 0 0 32%;
+  }
+
+  &__zoom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top {
+    background: #303943;
+    border-radius: 50%;
+    padding: 8%;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    img {
+      height: 39px;
+      width: 54px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    h4 {
+      color: #fff;
+    }
+  }
+}
+
+.service-box-container {
+  @include respond-to(xsm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
